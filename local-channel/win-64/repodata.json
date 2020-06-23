@@ -1,0 +1,44 @@
+{
+  "info": {
+    "subdir": "win-64"
+  },
+  "packages": {
+    "babel-2.7.0-py37_0.tar.bz2": {
+      "build": "py37_0",
+      "build_number": 0,
+      "depends": [
+        "python >=3.7,<3.8.0a0",
+        "pytz >=2015.7"
+      ],
+      "license": "BSD",
+      "license_family": "BSD",
+      "md5": "8f3b354519cad3bb5e18379577686541",
+      "name": "babel",
+      "sha256": "c7ca35121939f151ba2eddc61ed3a81291d138661c9aff7931250d57dbe225a1",
+      "size": 6189324,
+      "subdir": "win-64",
+      "timestamp": 1590612635477,
+      "version": "2.7.0"
+    },
+    "babel-2.8.0-py37_0.tar.bz2": {
+      "build": "py37_0",
+      "build_number": 0,
+      "depends": [
+        "python >=3.7,<3.8.0a0",
+        "pytz >=2015.7"
+      ],
+      "license": "BSD",
+      "license_family": "BSD",
+      "md5": "c49557911e874ad95a659b45cea36a16",
+      "name": "babel",
+      "sha256": "ec287651c4d7381c537c9fe8c0ccd62ba888ed7f5c38cec81b30091a1596e09f",
+      "size": 6358615,
+      "subdir": "win-64",
+      "timestamp": 1592856086836,
+      "version": "2.8.0"
+    }
+  },
+  "packages.conda": {},
+  "removed": [],
+  "repodata_version": 1
+}
