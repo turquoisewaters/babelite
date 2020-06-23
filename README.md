@@ -10,9 +10,9 @@ This can be done using the --channel or -c option with conda install:
 
 ```
 Examples...
-conda install -c \path\whereyoudownloaded\your\babelite\folder babel
-conda install -c \path\whereyoudownloaded\your\babelite\folder babel=2.8.0
-conda install -c \path\whereyoudownloaded\your\babelite\folder babel=2.7.0
+conda install -c \path\whereyoudownloaded\your\babelite\local-channel babel
+conda install -c \path\whereyoudownloaded\your\babelite\local-channel babel=2.8.0
+conda install -c \path\whereyoudownloaded\your\babelite\local-channel babel=2.7.0
 ```
 
 
