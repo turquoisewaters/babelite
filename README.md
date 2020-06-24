@@ -4,27 +4,29 @@ python-babel without support for Maltese language.
 Babelite is the babel anaconda package with the mt.dat file removed.
 It should behave the same as babel but without support for the Maltese language.
 
-Babelite is setup as a local channel, so the install process is the same as usual except you have to
-tell anaconda to use the local channel, where it is located, and the package you want to install.
-This can be done using the --channel or -c option with conda install:
+Babelite is setup as a local channel, so the install process consists of two steps.
+1. First we have to tell conda about our new local channel and make sure it is the highest
+   priority.  
+2. Use conda to install babel as normal
 
-```
-Examples...
-conda install -c \path\whereyoudownloaded\your\babelite\local-channel babel
-conda install -c \path\whereyoudownloaded\your\babelite\local-channel babel=2.8.0
-conda install -c \path\whereyoudownloaded\your\babelite\local-channel babel=2.7.0
-```
+	```
+	conda config --prepend channels \path\whereyoudownloaded\babelite-master\local-channel
+	conda install babel
+	```
 
 
 ### Pin the version of babel
-Probably optional, but for good measure I would recommend "pinning" the version of babel to the
-one installed to help ensure that anaconda doesn't try to automatically update babel.
 
-Create a file within the miniconda/conda-meta/ folder call "pinned" within that folder insert text:
-```
-babel ==2.8.0
-or
-babel ==2.7.0
-```
+Probably not necessary, but if you want to ensure that a specific version is used I would recommend "pinning" the desired version of babel. For example the installation would look like the following:
+
+	```
+	conda config --prepend channels \path\whereyoudownloaded\babelite-master\local-channel
+	conda install babel=2.7.0
+	```
+Create a file within the miniconda/conda-meta/ folder call "pinned" and within that folder insert text:
+
+	```
+	babel ==2.7.0
+	```
 
 Intended for use on Windows 10.
